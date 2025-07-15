@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import Image from "next/image"
+import img1 from "@/public/heroimage.jpg"
 import { Trophy, Star, Award } from "lucide-react"
 
 export default function FlipCard() {
@@ -25,10 +26,10 @@ export default function FlipCard() {
               <div className="absolute bottom-6 left-6 w-4 h-4 bg-yellow-400 rounded-full opacity-30"></div>
 
               {/* Image container */}
-              <div className="flex items-center justify-center h-full p-6">
+              <div className="flex items-center justify-center h-full p-6 bg-gradient-to-br from-yellow-400 via-yellow-300 to-yellow-500  rounded-3xl  shadow-2xl">
                 <div className="relative">
                   <Image
-                    src="/student-achievement.png"
+                    src={img1}
                     alt="Chess student"
                     width={280}
                     height={320}

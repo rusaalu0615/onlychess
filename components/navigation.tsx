@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import Image from "next/image"
+import img1 from "@/public/logo.jpg"
 import Link from "next/link"
 import { ChevronDown, Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -16,7 +17,7 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <Image src="/logo.png" alt="Only Chess Academy" width={50} height={50} className="h-12 w-auto" />
+            <Image src={img1} alt="Only Chess Academy" width={50} height={50} className="h-12 w-auto" />
             <span className="text-xl font-bold text-navy-900">Only Chess Academy</span>
           </div>
 
@@ -53,6 +54,11 @@ export default function Navigation() {
                 <ChevronDown className="h-4 w-4" />
               </DropdownMenuTrigger>
               <DropdownMenuContent className="bg-white border-yellow-400">
+                <DropdownMenuItem>
+                  <Link href="/services/online-1to1" className="w-full">
+                    Trail Class
+                  </Link>
+                </DropdownMenuItem>
                 <DropdownMenuItem>
                   <Link href="/services/online-1to1" className="w-full">
                     Online 1 to 1 Chess

@@ -2,11 +2,14 @@
 "use client";
 
 import Image from "next/image";
+import img1 from "@/public/chessimage.jpg";
 import { Button } from "@/components/ui/button";
 
 export default function MoreThanGame() {
   return (
-    <section className="px-6 py-12 md:px-20 bg-gradient-to-br from-[#fffef8] to-[#fff9ec]">
+    <section
+      className="px-6 py-12 md:px-20 bg-[conic-gradient(at_top_left,_#fcb900,_#fff3b0,_#fcb900,_#fff8d0,_#fcb900)]"
+    >
       <div className="grid md:grid-cols-2 gap-10 items-center">
         {/* Text Content */}
         <div>
@@ -36,7 +39,7 @@ export default function MoreThanGame() {
         {/* Image */}
         <div className="relative">
           <Image
-            src="/chess-children.jpg" // You can replace this with your own image or Google image you download
+            src={img1}
             alt="Children playing chess"
             width={600}
             height={400}
