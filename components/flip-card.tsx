@@ -18,12 +18,12 @@ export default function FlipCard() {
         <div className="absolute inset-0 w-full h-full backface-hidden">
           <div className="relative w-full h-full flex items-center justify-center">
             {/* Holographic capsule border */}
-            <div className="relative w-[400px] h-[550px] rounded-t-full rounded-b-lg">
+            <div className="relative w-[450px] h-[600px] rounded-t-full rounded-b-lg">
               {/* Image container with 3D effect */}
               <div className="flex items-center justify-center h-full p-6">
                 <div className="relative transition-transform duration-300">
                   {/* Modern stylish border wrapper */}
-                  <div className="relative w-80 h-96 p-1 bg-gradient-to-br from-yellow-400 via-amber-500 to-orange-500 rounded-t-full rounded-b-lg shadow-2xl translate-y-[-20px] z-10">
+                  <div className="relative w-96 h-[450px] p-1 bg-gradient-to-br from-yellow-400 via-amber-500 to-orange-500 rounded-t-full rounded-b-lg shadow-2xl translate-y-[-20px] z-10">
                     {/* Inner border with glassmorphism effect */}
                     <div className="relative w-full h-full bg-gradient-to-br from-white/20 via-white/10 to-transparent backdrop-blur-sm rounded-t-full rounded-b-lg p-0.5">
                       {/* 3D Image container */}
